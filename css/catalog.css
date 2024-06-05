@@ -1,0 +1,82 @@
+/* Список обнуляющих стилей */
+@import url(reset.css);
+/* ------------------------ */
+/* ---Технические классы--- */
+.wrapper {
+    min-height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+._container {
+    width: 70%;
+    margin: 0 auto;
+}
+/* ------------------------ */
+/* ---------Header--------- */
+.header {
+    background: Black;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 110px;
+    border-bottom: black 3px solid;
+}
+header ul {
+    display: flex;
+    justify-content: end;
+    margin: 15px 0px 0px 0px;
+}
+header ul li a{
+    font-size: 22px;
+    color: #fff;
+    margin: 0px 20px 0px 0px;
+    letter-spacing: 0.3px;
+    transition: all 0.5s ease;
+}
+header ul li a:hover {
+    border-bottom: 1px solid #fff;
+    padding: 0px 0px 3px 0px;
+}
+/* ------------------------ */
+/* ----------Main---------- */
+.main-catalog {
+    padding: 20px 0;
+}
+.main-catalog h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.product-item {
+    background: #f4f4f4;
+    border: 1px solid #ddd;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: calc(33.333% - 20px);
+    box-sizing: border-box;
+}
+.product-item img {
+    max-width: 100%;
+    height: auto;
+}
+.product-item h3 {
+    margin: 10px 0;
+}
+.product-item .price {
+    color: #888;
+    font-size: 20px;
+}
+/* ------------------------ */
+/* ---------Footer--------- */
+footer {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 20px;
+}
